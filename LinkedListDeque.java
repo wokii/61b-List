@@ -34,7 +34,7 @@ public class LinkedListDeque<T> {
         size = 1;
 
     }
-    //to add first, the we create a new node whose prev points to sentinel, and next points to the current first node.
+    //to add first, we create a new node whose prev points to sentinel, and next points to the current first node.
     //then set sentinel.next to point to this new node
     //and current first.prev also point to this new node and size++
     public void addFirst(T item){
@@ -49,7 +49,7 @@ public class LinkedListDeque<T> {
 
         size++;
     }
-    //to add last, the we create a new node whose next points to sentinel, and prev points to the current last node.
+    //to add last, we create a new node whose next points to sentinel, and prev points to the current last node.
     //then set sentinel.prev to point to this new node
     //and current last.next also point to this new node and size++
     public void addLast(T item){
