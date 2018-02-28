@@ -46,21 +46,36 @@ public class Player {
             if(StdDraw.hasNextKeyTyped()){
                 switch (StdDraw.nextKeyTyped()){
 
-                    case 'w': //won't froze after holding down and releasing 'w'
+                    case 'w': //won't freeze after holding down and releasing 'w'
                         player.moveTop();
                         break;
-                    case 'a': //programme will froze after holding down and releasing 'a'
+                    case 'a': //programme will freeze after holding down and releasing 'a'
                         player.moveLeft();
                         break;
-                    case 's': //programme will froze after holding down and releasing 's'
+                    case 's': //programme will freeze after holding down and releasing 's'
                         player.moveBot();
                         break;
 
-                    case 'd': //won't froze after holding down and releasing 'd'
+                    case 'd': //won't freeze after holding down and releasing 'd'
                         player.moveRight();
                         break;
+                    /*
+                    case 't': //won't freeze after holding down and releasing 't'
+                        player.moveTop();
+                        break;
+                    case 'f': ////won't freeze after holding down and releasing 'f'
+                        player.moveLeft();
+                        break;
+                    case 'g': ////won't freeze after holding down and releasing 'g'
+                        player.moveBot();
+                        break;
 
-                    default: // however, if I rebind movement keys to "tfgh", programme won't froze after holding down 
+                    case 'h': ////won't freeze after holding down and releasing 'h'
+                        player.moveRight();
+                        break;
+                        */
+
+                    default: // however, if I rebind movement keys to "tfgh", programme won't freeze after holding down
                              // (and releasing) any of them
                         break;
                 }
